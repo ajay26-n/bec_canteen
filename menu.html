@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - College Canteen</title>
+
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <center>
+    <h1 class="hww">OUR MENU</h1>
+</center>
+
+<div class="mbox">
+    <div class="box1">
+        <img src="breakfast.jpg" height=200px width="250px"><br>
+        <button class="bt1" onclick="location.href='breakfast.html'">breakfast</button>
+
+    </div>
+    <div class="box1">
+        <img src="lunch.jpg" height="200px" width="250px"><br>
+        <button class="bt1"  onclick="location.href='lunch.html'">lunch</button>
+    </div>
+    <div class="box1">
+        <img src="dinner.jpg" height="200px" width="250px"><br>
+        <button class="bt1" onclick="location.href='dinner.html'">dinner</button>
+    </div>
+</div>
+
+<div class="mbox1">
+    <div class="box1">
+        <img src="drink.jpg" height=200px width="250px"><br>
+        <button class="bt1" onclick="location.href='drinks.html'">drinks</button>
+
+    </div>
+    <div class="box1">
+        <img src="snack.jpg" height="200px" width="250px"><br>
+        <button class="bt1" onclick="location.href='snacks.html'">snacks</button>
+    </div>
+   
+</div><br>
+<center>
+<button class="bt2" onclick="location.href='index.html'">Back to home</button>
+</center>
+
+
+
+
+
+    
+    
+       
+
+                
+
+            
+            
+                
+                
+
+            
+            
+    
+            
+            
+            
+
+
+       
+
+    <p id="cart"></p>
+
+    <script>
+        let cart = [];
+
+        function addItem(item) {
+            cart.push(item);
+            document.getElementById('cart').innerHTML = `Items in Cart: ${cart.join(', ')}`;
+        }
+    </script>
+</body>
+</html>
